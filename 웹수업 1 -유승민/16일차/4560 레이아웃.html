@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4560 레이아웃</title>
+    <style>
+
+        * { margin:0; padding:0; }
+
+        a { color:black; text-decoration:none; }
+
+        ul { list-style:none; }
+
+        /* #wrap {
+            width:100%;
+            height:1800px;
+            margin:0 auto;
+            background-color:ghostwhite;
+        }
+
+        #box {
+            width:300px;
+            height:200px;
+            margin:0 auto;
+        }
+
+        .box_1 {
+            width:100%;
+            height:160px;
+            background-color:crimson;
+        }
+
+        .box_2 {
+            width:100%;
+            height:40px;
+            background-color:rgb(235, 187, 142);
+            
+            font-size:20px;
+            text-align:center;
+            font-weight:700;
+        }
+
+        #fix_1 {
+            width:100px;
+            height:200px;
+            background-color:crimson;
+            position:fixed;
+            top:50px;
+            left:50px;
+        }
+
+
+        #fix_2 {
+            width:120px;
+            height:50px;
+            background-color:crimson;
+            position:fixed;
+            top:150px;
+            right:50px;
+        }
+
+        #intro {
+            width:1400px;
+            height:800px;
+            margin:0 auto;
+            margin-top:300px;
+            
+        }
+
+        #intro>li {
+            width:327.5px;
+            height:327.5px;
+            background-color:deeppink;
+            float:left;
+            margin-right:30px;
+            margin-bottom:100px;
+            border-radius:50%;
+
+            font-size:30px;
+            font-weight:900;
+            text-align:center;
+            line-height:327.5px;
+        }
+
+        #intro>li:nth-child(2) {
+            background:url("a.jpg");
+        }
+
+        #intro>li:nth-child(1):hover {
+            background-color:crimson;
+        }
+
+        #intro>li:nth-child(4),#intro>li:nth-child(8) {
+            margin-right:0;
+        }
+
+        #intro>li:nth-child(5),#intro>li:nth-child(6),#intro>li:nth-child(7),#intro>li:nth-child(8) {
+            margin-bottom:0;
+        }
+
+        #plus {
+            width:50px;
+            height:50px;
+            border:1px solid gray;
+            border-radius:50%;
+            
+            text-align:center;
+            font-size:20px;
+            font-weight:700;
+            line-height:50px;
+            
+            margin:0 auto;
+        }
+
+        #box_2 {
+            width:120px;
+            height:100px;
+            background-color:crimson;
+            margin:0 auto;
+            margin-top:60px;
+        }
+
+        p {
+            text-align:center;
+            margin-top:60px;
+            color:gray;
+        }
+
+        #top {
+            width:50px;
+            height:50px;
+            border:1px solid gray;
+            border-radius:50%;
+            box-sizing:border-box;
+            position:fixed;
+            bottom:100px;
+            right:100px;
+
+            text-align:center;
+            line-height:50px;
+        }
+
+        #top>a {
+            display:block;
+            color:gray;
+        } */
+
+        img { display:block; border:0; }
+
+        #wrap {
+            width:100%;
+            /* 세로 길이는 X : 자식에게 넣어주세요 */
+        }
+
+        header {
+            width:100%;
+            height:300px;
+            float:left;
+        }
+
+        #logo {
+            width:100px;
+            height:200px;
+            background-color:crimson;
+            position:fixed;
+            top:50px;
+            left:50px;
+
+            z-index:99;
+        }
+
+        #menu {
+            width:300px;
+            height:200px;
+            background-color:tan;
+            margin:0 auto;
+
+            z-index:99;
+        }
+
+        nav {
+            width:100%;
+            height:150px;
+            background-color:crimson;
+        }
+
+        #menu>p {
+            width:100%;
+            height:50px;
+            background-color:peachpuff;
+
+            font-size:24px;
+            text-align:center;
+            color:#505050;
+            line-height:50px;
+        }
+
+        #join {
+            width:120px;
+            height:50px;
+            background-color:crimson;
+            position:fixed;
+            top:100px;
+            right:50px;
+        }
+
+        /* header end */
+
+        section {
+            width:100%;
+            float:left;
+        }
+
+        #container {
+            width:1400px;
+            margin:0 auto;
+        }
+
+        .con_wrap {
+            width:100%;
+            margin-bottom:50px;
+            overflow:hidden;
+            /* =>자식에게 높이값을 맞춰줄 때
+            => 자식에게 float값이 들어가면 부모는 자식의 높이값을 인식할 수 없음
+            => 해결방법 : 높이값을 인식하지 못하는 부모에게 overflow:hidden을 넣어줌*/
+        }
+
+        .con_wrap>li {
+            width:327.5px;
+            height:327.5px;
+            background-color:cornflowerblue;
+            float:left;
+            margin-right:30px;
+            border-radius:50%;
+
+            font-size:40px;
+            text-align:center;
+            line-height:327.5px;
+            position:relative;
+            overflow:hidden;
+            /* 부모 크기 밖으로 넘친 값을 잘라(position:absolute넣어준 자식)줌 */
+        }
+
+        .con_wrap>li:last-child {
+            margin-right:0;
+        }
+
+        #bg-img {
+            background-image:url("b.jpg");
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-position:center;
+        }
+
+        #img_box>img, #img_box>p {
+            width:100%;
+            height:100%;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+
+        #img_box:hover>p {
+            background-color:#0000;
+            color:white;
+        }
+
+        #plus_btn {
+            width:50px;
+            height:50px;
+            border:1px solid gray;
+            margin:0 auto;
+            border-radius:50%;
+
+            font-size:25px;
+            text-align:center;
+            color:gray;
+            line-height:45px;
+        }
+
+        /* section end */
+
+        footer {
+            width:100%;
+            height:250px;
+            float:left;
+        }
+
+        #in_footer {
+            width:400px;
+            height:200px;
+            margin:25px auto;
+        }
+
+        #footer_logo {
+            width:140px;
+            height:110px;
+            background-color:crimson;
+            margin:0 auto 20px auto;
+        }
+
+        #in_footer>p {
+            width:100%;
+            text-align:center;
+            font-size:15px;
+        }
+
+        #top_btn {
+            width:50px;
+            height:50px;
+            border:1px solid gray;
+            border-radius:50%;
+            
+            position:fixed;
+            bottom:50px;
+            right:50px;
+
+            text-align:center;
+            line-height:47px;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- <div id="wrap">
+
+        <div id="box">
+            <div class="box_1"></div>
+            <div class="box_2">Share the Experience</div>
+        </div>
+
+        <div id="fix_1"></div>
+
+        <div id="fix_2"></div>
+
+        <ul id="intro">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+
+        <div id="plus"><a href="#">+</a></div>
+
+        <div id="box_2"></div>
+
+        <p>서울특별시 서초구 양재천로17길 22 두원빌딩<br>
+        3층 Copyright ⓒ 2018 INTROSTUDIO. ALL<br>
+        Rights Reserved.</p>
+        
+        <div id="top"><a href="#">top</a></div>
+    </div> -->
+    
+    <div id="wrap">
+        <header>
+            <div id="logo"><a href="#"></a></div>
+            <div id="menu">
+                <nav></nav>
+                <p>Share the Experience</p>
+            </div>
+            <div id="join"><a href="#"></a></div>
+        </header>
+        <!-- header end -->
+
+        <section>
+            <div id="container">
+                <ul class="con_wrap">
+                    <li id="bg-img">ABOUT</li>
+                    <li id="img_box">
+                        <img src="c.jpg">
+                        <p>NEWS</p>
+                    </li>
+                    <li>GALLERY</li>
+                    <li>CONTACT</li>
+                </ul>
+                <ul class="con_wrap">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div id="plus_btn">+</div>
+        </section>
+        <!-- section end -->
+
+        <footer>
+            <div id="in_footer">
+                <div id="footer_logo"><a href="#"></a></div>
+                <p>서울특별시 서초구 양재천로17길 22 두원빌딩 3층
+                Copyright ⓒ 2018 INTROSTUDIO. ALL Rights Reserved.</p>
+            </div>
+        </footer>
+        <!-- footer end -->
+
+        <div id="top_btn"><a href="#">top</a></div>
+        <!-- top_btn end -->
+    </div>
+
+</body>
+</html>

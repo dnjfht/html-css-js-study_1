@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테두리 둥글게</title>
+    <style>
+
+        .box {
+            width:300px;
+            height:300px;
+            background-color:seagreen;
+            margin:100px auto;
+            font-size:30px;
+            text-align:center;
+            line-height:300px;
+        }
+
+        /* *border 속성
+        border-radius
+        => 테두리 둥글게 처리 */
+
+        #box_1 {
+            border-top-right-radius:10px;
+            border-bottom-right-radius:50px;
+            border-bottom-left-radius:100px;
+            border-top-left-radius:150px;
+        }
+
+        /* => 각 모서리 부분에 둥글기 값을 따로 추가해줌 */
+
+        #box_2 {
+            border-radius:50%;
+        }
+
+        /* => px 단위로 넣을 땐 요소값의 절반값만큼 넣어주면 됨
+        => 요소가 유동적으로 변해버리면 정원이 되지 않음
+        => 요소의 크기가 어떻게 되든 50%를 넣게 되면
+        요소 크기의 무조건 절반 크기가 들어가짐 */
+
+    </style>
+</head>
+
+<body>
+  
+   <div class="box" id="box_1">테두리 둥글게</div> 
+   <div class="box" id="box_2">정원</div> 
+</body>
+</html>

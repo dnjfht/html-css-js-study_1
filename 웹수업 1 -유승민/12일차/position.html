@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+   
+        * { margin:0; padding:0; }
+
+        a { color:black; text-decoration:none; }
+
+        body { height:2000px; }
+
+        /* * position
+        => 좌표값으로 위치를 설정하기 위한 속성
+        => left, top, bottom, right : x,y 축
+        => z-index : z축 ( 박스의 순서를 바꿀 때 사용 )
+                     단위는 없음 ( 순서이기 때문에 )
+                     -9999 ~ +9999까지 순서 지정 가능
+
+        1. absolute
+        => 브라우저의 왼쪽 상단점을 0,0으로 기준한다
+        => 절대값 위치 */
+
+        /* 2. relative
+        => 자기 자신의 왼쪽 상단점을 0,0으로 기준한다
+        => 상대값 위치 */
+
+        /* 3. fixed
+        => 브라우저의 왼쪽 상단점을 0,0
+        => 브라우저의 항상 그 위치에서 보여지는 위치값
+        => 퀵메뉴 효과 */
+
+        .box {
+            width:300px;
+            height:300px;
+            font-size:80px;
+            text-align:center;
+            line-height:300px;
+            /* position:absolute; */
+            /* position:relative; */
+        }
+
+        #box_1 {
+            background-color:yellow;
+            top:0;
+            left:0;
+        }
+
+        #box_2 {
+            background-color:rgb(255, 208, 0);
+            top:150px;
+            left:150px;
+            /* z-index:4; */
+        }
+
+        #box_3 {
+            background-color:rgb(255, 166, 0);
+            position:fixed;
+            top:300px;
+            left:300px;
+            /* bottom:0;
+            right:0; */
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box" id="box_1">1</div>
+    <div class="box" id="box_2">2</div>
+    <div class="box" id="box_3">3</div>
+
+</body>
+</html>

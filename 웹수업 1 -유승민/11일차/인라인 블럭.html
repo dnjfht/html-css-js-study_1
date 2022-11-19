@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인라인 블럭</title>
+    <style>
+
+        * { padding:0; margin:0; }
+
+        a { color:black; text-decoration:none; }
+
+        /* *block
+        =>세로 정렬값 
+        =>가로세로 크기값
+        =>내가 모르는 여백없음
+        =>모든 태그를 삽입 가능
+        <article>,<aside>,<blockquote>,<div>,<footer>,<form>,<h1><h6>,
+        <header>,<hr>,<li>,<main>,<nav>,<p>,<pre>,<section>,<table>,<ul>,<video> */
+
+        .block {
+            width:300px;
+            height:300px;
+            background-color:pink;
+            
+            /* display:inline;
+            => 요소들은 inline 요소로 표시
+            => 인라인 요소의 특징을 가지게 됨 */
+
+            /* display:inline-block;
+            => 박스 모양을 inline으로 가로 정렬( 크기 조절 가능 : block요소 특징 )
+            =>block과 inline이 두 가지 다 적용이 되기 때문에
+            플로트값을 넣지 않아도 자동 왼쪽 정렬이 됨 */
+
+            /* display:none; */
+        }
+
+        /* *inline
+        =>가로정렬값
+        =>가로세로 크기값 없음(내용에 자동맞추기)
+        =>내가 모르는 여백이 있음
+        =>block형식의 태그 삽입 안됨
+        <a>,<b>,<big>,<br>,<button>,<i>,<img>,<input>,<label>,<script>,<small>,<span>,<strong>,
+        <sub>,<sup>,<textarea>,<time> */
+   
+        .inline {
+            width:300px;
+            height:300px;
+            background-color:chartreuse;
+            font-size:80px;
+
+            /* display:block;
+            => 요소들을 block 요소로 표시
+            => 블럭 요소의 특징을 가지게 됨 */
+        }
+
+        /* *img 태그
+        => 가로정렬값
+        => 내가 모르는 여백이 있음
+        => 가로세로 크기값 있음 */
+
+        img {
+            display:block;
+            border:0;
+            /* => 이미지 태그에 블럭요소를 적용시키면 이미지의 알 수 없는 여백값을 빼줄 수 있음
+            => 보통 초기값을 잡을 때 많이 사용하고 넘어감 */
+        }
+
+        p {
+            width:auto;
+            
+            /* => 블럭 요소이기 때문에 margin-right 간격까지 가로로 인식하여
+            가로 크기값이 브라우저 가득 차버림
+            ( float 값을 넣어주면 블럭 요소의 가로값 크기를 내용에 맞춰줄 수 있음 ) */ 
+            
+            height:auto;
+
+            /* => 태그 안의 내용으로 크기를 맞추고 싶을때 */
+
+            background-color:cyan;
+            float:left;
+            font-size:60px;
+        }
+
+        h1 {
+            width:100%;
+            height:auto;
+            background-color:darkorange;
+            margin-top:200px;
+            text-align:center;
+            font-size:50px;
+        }
+
+        /* *span
+        => 한 태그를 나눠 여러 CSS를 적용하는 태그 */
+
+        .blue {
+            color:rgb(4, 0, 255);
+        }
+
+        .red {
+            color:rgb(228, 0, 0);
+        }
+
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="block">블럭 요소</div>  
+    <div class="block">블럭 요소</div>  
+    <a href="#" class="inline">인라인 요소</a>
+    <a href="#" class="inline">인라인 요소</a>
+
+    <br><br><br>
+
+    <img src="a.jpg" alt="짱구">
+    <img src="b.jpg" alt="짱구">
+    <p>크기값 auto</p>
+
+    <h1><span class="blue">G</span><span class="red">o</span><span class="blue">o</span>gl<span class="red">e</span></h1>
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 가운데 정렬</title>
+    <style>
+
+        * { margin:0; padding:0; }
+
+        a { color:black; text-decoration:none; }
+
+        #box {
+            width:300px;
+            height:300px;
+            background-color:brown;
+
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin-left:-150px;
+            margin-top:-150px;
+
+            display:none;
+        }
+
+        /* * 포지션 가운데 정렬
+        => left 기준으로 left:50% 일때 margin-left로 요소의 -가로값/2값을 넣어줌
+        => ex) 선택된 요소 가로값 500px 일때
+        => left:50%; margin-left:-250px */
+
+        #out_box {
+            width:700px;
+            height:500px;
+            background-color:cadetblue;
+            margin:0 auto;
+            position:relative;
+        }
+
+        #in_box {
+            width:250px;
+            height:250px;
+            background-color:crimson;
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin-top:-125px;
+            margin-left:-125px;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div id="box"></div>
+
+    <div id="out_box">
+        <div id="in_box"></div>
+    </div>
+
+</body>
+</html>

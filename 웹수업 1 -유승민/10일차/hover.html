@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+    <style>
+
+        * { padding:0; margin:0; }
+        
+        ul { list-style:none; }
+
+        a { color:black; text-decoration:none; }
+
+        #box {
+            width:300px;
+            height:300px;
+            background-color:tan;
+        }
+
+        /* *이벤트
+        => 사용자가 어떠한 행동을 했을 때 다른 결과물로 표현해줌
+
+        *hover
+        => 마우스를 올렸을 때 명령어 실행
+        => 요소 위에 마우스를 올렸을 때 스타일을 다르게 지정해줄 수 있음
+        => 웬만한 스타일 지정 가능 */
+
+        /* - hover 이벤트 적용할 때
+        => '요소에 마우스를 올리면 요소가 다른 스타일로 변경' 식으로 적어주면 됨 */ 
+
+        #box:hover {
+            background-color: tomato;
+            width:500px;
+        }
+
+        #out_box {
+            width:600px;
+            height:400px;
+            background-color:yellowgreen;
+
+            float:left;
+
+            /* padding:100px 200px;
+            box-sizing:border-box; */
+        }
+
+        #in_box {
+            width:200px;
+            height:200px;
+            background-color:turquoise;
+            margin:100px auto;
+
+            /* * 자삭에게 margin-top 값을 넣었을 때 부모박스와 같이 간격이 내려가는 경우
+            => 해결방법
+            1) margin-top 값을 넣어준 자식박스에게 float을 넣어준다
+            2) margin-top 값을 넣어준 자식박스의 부모에게 float을 넣어준다
+            3) 자식에게 넣어준 margin 값 대신 부모에게 padding 값을 넣어준다
+
+            * 주의할 점
+            => margin:0 auto ( 좌우 auto ) 와 float은 힘께 사용할 수 없음
+            => 항상 float가 우선순위가 높기 때문에 auto 값이 적용되지 않을 수 있음 */
+        }
+
+        /* * 부모한테 마우스를 올리면 자식의 스타일 변경
+        => 반드시 부모, 자식 계열이어야 함
+        => 부모:hover>자식 {
+            스타일 변경
+        } */
+
+        #out_box:hover>#in_box {
+            background-color:salmon;
+        }
+
+        #out_box>#in_box:hover {
+            background-color:cornflowerblue;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+  
+    <div id="box">박스에 마우스를 올리면 배경색 변경</div>
+
+    <div id="out_box">
+        <div id="in_box">부모에게 마우스를 올렸을 때 자식박스 배경색 변경</div>
+    </div>
+
+</body>
+</html>

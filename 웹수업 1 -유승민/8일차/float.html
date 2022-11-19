@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+
+        * { magin:0; padding:0; }
+
+        /* *float
+        => left 기본 여백값을 빼고 왼쪽으로 정렬시킴
+        => right 기본 여백값을 빼고 오른쪽으로 정렬 시킴
+        왼쪽과 다르게 역순으로 정렬이 됨 */
+
+        ul { list-style:none; }
+
+        #out_box {
+            width:900px;
+            height:300px;
+            /* border:10px solid black; */
+            float:right;
+        }
+
+        .box {
+            width:300px;
+            height:300px;
+            font-size:80px;
+            text-align:center;
+            line-height:300px;
+            /*float:right;*/
+            float:left;
+        }
+
+        #box_1 {
+            background-color:slateblue;
+        }
+
+        #box_2 {
+            background-color:salmon;
+        }
+
+        #box_3 {
+            background-color:gold;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    
+    <div id="out_box">
+        <div class="box" id="box_1">1</div>
+        <div class="box" id="box_2">2</div>
+        <div class="box" id="box_3">3</div>
+    </div>
+
+</body>
+</html>

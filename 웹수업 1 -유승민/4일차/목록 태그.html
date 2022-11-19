@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <title>목록 태그</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = "1.0", maximum-scale = "1.0",         minimum-scale = "1.0">  
+  </head>
+
+  <body>
+  
+  <!--
+  * 순서가 없는 목록 -> <ul><li></li></ul> <- 두 태그가 한 세트
+  속성 : type="속성값"
+  => disc ( 속이 채워진 원형 기호 )
+  circle ( 속이 비워진 원형 기호 )
+  square ( 사각형 기호 )
+  none ( 기호가 없음 )
+  -->
+
+  <ul>
+  <li type="disc">순서가 없는 목록 태그</li>
+  <li type="circle">순서가 없는 목록 태그</li>
+  <li type="square">순서가 없는 목록 태그</li>
+  <li type="none">순서가 없는 목록 태그</li>
+  </ul>
+
+  <ul type="circle">
+  <li>순서가 없는 목록 태그2</li>
+  <li type="square">순서가 없는 목록 태그2</li>
+  <li>순서가 없는 목록 태그2</li>
+  </ul>
+
+  <!--
+  ul을 두 개 만들면 새로운 목록으로 생성이 되고,
+  ul 안쪽에 li를 여러 개 생성시 같은 그룹 안에 묶여 있는 목록 처리가 됨
+ 
+  자식이 같은 속성으로 여러 개 들어갈 시 부모한테 속성값을 넣어준다면
+  기본적으로 자식이 속성을 상속 받아서 적용됨
+
+  부모에게 속성을 상속받고 있는 상태에서 자식에게 속성을 넣어준다면
+  부모에게서 상속받는 속성보다 자기 자신에게 넣어주는 속성이 우선 순위가 높아서
+  자기 자신에게 넣어주는 속성값이 브라우저에 표현됨
+  ( 항상 브라우저는 우선 순위가 가장 높은 것을 표현해주기 때문 )
+  -->
+
+  <!--
+  * 순서가 있는 목록 -> <ol><li></li></ol> <- 두 태그가 한 세트
+  속성 : type="속성값"
+  => 1 ( 숫자로 표시 )
+  => a ( 알파벳 소문자로 표시 )
+  => A ( 알파벳 대문자로 표시 )
+  => i ( 로마 소문자로 표시 )
+  => I ( 로마 대문자로 표시 )
+  -->
+  
+  <ol>
+  <li type="1">순서가 있는 목록 태그</li>
+  <li type="a">순서가 있는 목록 태그</li>
+  <li type="A">순서가 있는 목록 태그</li>
+  <li type="i">순서가 있는 목록 태그</li>
+  <li type="I">순서가 있는 목록 태그</li>
+  </ol>
+
+  <ol>
+  <li type="circle">문제</li>
+  <li type="I">문제</li>
+  <li type="a">문제</li>
+  <li type="a">문제</li>
+  <li type="i">문제</li>
+  <li type="none">문제</li>
+  <li type="i">문제</li>
+  </ol>
+
+  </body>
+</html>

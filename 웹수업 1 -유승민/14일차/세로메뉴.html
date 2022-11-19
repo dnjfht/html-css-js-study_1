@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세로메뉴</title>
+    <style>
+
+        * { margin:0; padding:0; }
+
+        a { color:black; text-decoration:none; }
+
+        ul { list-style:none; }
+
+        /* #wrap {
+            width:1200px;
+            height:600px;
+            background-color:lightskyblue;
+            margin:0 auto;
+
+            font-size:20px;
+            font-weight:600;
+            text-align:center;
+        }
+
+        header {
+            width:200px;
+            height:100%;
+            background-color:lime;
+            float:left;
+        }
+
+        #logo {
+            width:100%;
+            height:100px;
+            background-color:pink;
+            float:left;
+            margin-bottom:50px;
+            line-height:100px;
+        }
+
+        nav {
+            width:100%;
+            height:450px;
+            background-color:magenta;
+            float:left;
+
+            font-size:16px;
+            line-height:89px;
+        }
+
+        nav>div {
+            width:100%;
+            height:89px;
+            border-bottom:solid 1px black;
+            float:left;
+        }
+
+        section { 
+            float:right;
+        }
+
+        #section_1 {
+            width:1000px;
+            height:250px;
+            background-color:gold;
+            margin-bottom:50px;
+            line-height:250px;
+        }
+
+        #section_2 {
+            width:1000px;
+            height:300px;
+            background-color:orangered;
+            line-height:300px;
+        }
+
+        #section_2>div {
+            width:313.33333px;
+            height:100%;
+            background-color:springgreen;
+            margin-right:30px;
+            float:left;
+        }
+
+        #section_2>div:last-child {
+            margin-right:0;
+        } */
+
+        #wrap {
+            width:1200px;
+            height:600px;
+            background-color:lightskyblue;
+            margin:0 auto;
+
+            font-weight:600;
+            text-align:center;
+        }
+
+        header {
+            width:200px;
+            height:100%;
+            background-color:lime;
+            float:left;
+        }
+
+        #logo {
+            width:100%;
+            height:100px;
+            background-color:pink;
+            float:left;
+            margin-bottom:50px;
+
+            font-size:30px;
+            line-height:100px;
+        }
+
+        #menu_wrap {
+            width:100%;
+            height:450px;
+            background-color:magenta;
+            float:left;
+
+            font-size:16px;
+            line-height:90px;
+        }
+
+        #menu_wrap>li {
+            width:100%;
+            height:20%;
+            border-bottom:solid 1px black;
+            float:left;
+            box-sizing:border-box;
+        }
+
+        /* header end */
+
+        #section_1 {
+            float:left;
+            width:1000px;
+            height:250px;
+            background-color:gold;
+            margin-bottom:50px;
+            line-height:250px;
+        }
+        /* section-1 end */
+
+        #section_2 {
+            float:left;
+            width:1000px;
+            height:300px;
+            background-color:orangered;
+            line-height:300px;
+        }
+        /* section-2 end */
+
+        .con {
+            width:313.333px;
+            height:100%;
+            background-color:springgreen;
+            margin-right:30px;
+            float:left;
+
+            font-size:24px;
+            line-height:300px;
+        }
+        
+
+        .con:last-child {
+            margin-right:0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- <div id="wrap">
+
+        <header>
+            <div id="logo"><a href="#">로고</a></div>
+
+            <nav>
+                <div><a href="#">메뉴1</a></div>
+                <div><a href="#">메뉴2</a></div>
+                <div><a href="#">메뉴3</a></div>
+                <div><a href="#">메뉴4</a></div>
+                <div><a href="#">메뉴5</a></div>
+            </nav>
+        </header>
+
+        <section id="section_1">
+            <div>배너영역</div>
+        </section>
+
+        <section id="section_2">
+                <div>컨텐츠1</div>
+                <div>컨텐츠2</div>
+                <div>컨텐츠3</div>
+        </section>
+
+    </div> -->
+
+    <div id="wrap">
+
+        <header>
+            <div id="logo"><a href="#">로고</a></div>
+
+            <ul id="menu_wrap">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+                <li><a href="#">메뉴4</a></li>
+                <li><a href="#">메뉴5</a></li>
+            </ul>
+        </header>
+        <!-- header end -->
+
+        <section id="section_1">배너영역</section>
+        <!-- section_1 end -->
+
+        <section id="section_2">
+                <div class="con">컨텐츠1</div>
+                <div class="con">컨텐츠2</div>
+                <div class="con">컨텐츠3</div>
+        </section>
+        <!-- section_2 end -->
+
+    </div>
+
+</body>
+</html>

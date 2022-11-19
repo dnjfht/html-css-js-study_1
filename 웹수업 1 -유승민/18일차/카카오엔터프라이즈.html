@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오엔터프라이즈</title>
+    <style>
+
+        * { margin:0; padding:0; }
+        ul { list-style:none; }
+        a { color:balck; text-decoration:none; }
+
+        #wrap { 
+            width:100%;
+            margin:0 auto;
+            background-color:ghostwhite;
+        }
+
+        header {
+            width:100%;
+            height:80px;
+
+            position:fixed;
+            top:0;
+            left:0;
+            background-color:rgba(0,0,0,0.5);
+        }
+
+        header:hover {
+            background-color:rgba(255,255,255,0.5);
+        }
+
+        header:hover #logo>a {
+            color:black;
+        }
+
+        header:hover #nav>li a{
+            color:black;
+        }
+
+        header:hover #link_gnb {
+            color:black;
+        }
+
+        #header_inner {
+            width:1240px;
+            height:80px;
+            margin:0 auto;
+        }
+
+        #logo {
+            width:140px;
+            height:80px;
+            line-height:70px;
+
+            float:left;
+        }
+
+        #logo a {
+            font-size:24px;
+            color:white;
+        }
+
+        span { font-weight:600; }
+
+        #nav {
+            width:780px;
+            height:60px;
+            margin-left:160px;
+            float:left;
+
+            font-size:16px;
+            text-align:center;
+            line-height:70px;
+        }
+
+        #nav>li {
+            padding:0 35px;
+            box-sizing:border-box;
+            float:left;
+        }
+
+        #nav>li a {
+            color:white;
+        }
+
+        #link_gnb {
+            color:white;
+            font-size:17px;
+            text-align:center;
+            line-height:70px;
+
+            float:right;
+        }
+
+        #main_visual>img {
+            width:100%;
+        }
+
+        #wrap_content {
+            width:1400px;
+            height:640px;
+            margin:0 auto;
+            margin-top:35px;
+        }
+
+        section {
+            width:444.666px;
+            height:180px;
+            float:left;
+            margin-right:30px;
+        }
+
+        section:nth-child(1),section:nth-child(2), section:nth-child(3) {
+            margin-bottom:20px;
+        }
+
+        section:nth-child(3),section:nth-child(6) {
+            margin-right:0;
+        }
+
+        footer {
+            width:100%;
+            height:100px;
+            float:left;
+            border-top:1px solid lightgray;
+        }
+
+        #footer_inner {
+            width:1640px;
+            height:80px;
+            margin:0 auto;   
+        }
+
+        #intro_img {
+            width:444.666px;
+        }
+
+        #intro_img>img {
+            width:100%;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <header>
+            <div id="header_inner">
+                <div id="logo"><a href="#">Kakao<span>enterpice</span></a></div>
+                <ul id="nav">
+                    <li><a href="#">소개</a></li>
+                    <li><a href="#">새소식</a></li>
+                    <li><a href="#">서비스</a></li>
+                    <li><a href="#">기술</a></li>
+                    <li><a href="#">기술블로그</a></li>
+                    <li><a href="#">제휴문의</a></li>
+                </ul>
+                <div id="link_gnb">인재영입</div>
+            </div>
+        </header>
+        <!-- header end -->
+
+        <div id="main_visual">
+            <img src="img/img_company01.jpg" alt="inroduce company">
+        </div>
+
+        <div id="wrap_content">
+            <section id="news">
+                <div id="tit">NEWS</div>
+                <div id="wrap_con">
+                    <p>[인터뷰] 카카오엔터프라이즈 '성장가능성 1위'의 비밀</p>
+                </div>
+            </section>
+            <section id="company">
+                <div id="tit">COMPANY</div>
+                <div id="wrap_con">
+                    <div id="intro_company">
+                        <h1>Why not?</h1>
+                        <p>당연한 것들에 대한 도전</p>
+                    </div>
+                    <div id="intro_company">
+                        <h1>If Kakao Enterprise, (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</h1>
+                        <p>카카오스러운 생각에 대한 기대</p>
+                    </div>
+                </div>
+            </section>
+            <section id="partnership">
+                <div id="tit">PARTNERSHIP</div>
+                <div id="wrap_con">
+                    <p>카카오엔터프라이즈는 AI 기술과 플랫폼을 바탕으로 당신과 함께 더<br>
+                    나은 세상을 만들어갑니다.</p>
+                </div>    
+            </section>
+            <section id="tech">
+                <div id="wrap_con">
+                    <div id="intro_img"><img src="img/con1.jpg" alt="tech_img"></div>
+                    <p>기술블로그 Tech &</p>
+                    <p>다양한 연구활동과 기술 소식, AI 회사에서 일하는 크루들과의 만남, 그리고 우리가 꿈꾸는<br>
+                    미래에 대한 이야기를 담았습니다.</p>
+                </div>
+            </section>
+            <section id="kakao_i">
+                <div id="wrap_con">
+                    <div id="intro_img"><img src="img/con2.jpg" alt="kakao_i_img"></div>
+                    <p>카카오엔터프라이즈의 핵심기술, Kakao i</p>
+                    <p>Ai 플렛폼 Kakao i는 카카오엔터프라이즈가 보유한 핵심기술이자 미래 기술의<br>
+                    집약체입니다.</p>
+                </div>
+            </section>
+            <section id="krew">
+                <div id="wrap_con">
+                    <div id="intro_img"><img src="img/con3.jpg" alt="krew_img"></div>
+                    <p>새로운 길에 도전할 크루를 기다립니다.</p>
+                    <p>Ai 기술을 통해 꿈을 현실로 만드는 여정에 함께 해주세요. 아무도 가보지 않은 길을 가는<br>
+                    카카오엔터프라이즈 호가 당신의 탑승을 기다립니다.</p>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div id="footer_inner">
+                <div id="footer_logo">Kakao<span>enterprise</span></div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

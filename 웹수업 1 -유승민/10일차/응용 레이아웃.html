@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>응용 레이아웃</title>
+    <style>
+
+        * { padding:0; margin:0; }
+
+        ul { list-style:none; }
+
+        a { color:black; text-decoration:none; }
+
+        /* #wrap {
+            width:1200px;
+            height:800px;
+            background-color:silver;
+            margin:0 auto;
+
+            font-size:50px;
+            text-align:center;
+        }
+
+        #menu {
+            width:1200px;
+            height:100px;
+            background-color:yellow;
+            line-height:100px;
+        }
+
+        .section { margin-top:50px; }
+
+        #section_1 {
+            width:1200px;
+            height:250px;
+            background-color:tomato;
+            line-height:250px;
+        }
+
+        #section_2 {
+            width:1200px;
+            height:350px;
+            background-color:skyblue;
+            line-height:350px;
+        }
+
+        #section_2>li {
+            width:380px;
+            height:350px;
+            float:left;
+            margin-right:30px;
+            background-color:sandybrown;
+        }
+
+        #section_2>li:last-child{
+            margin-right:0;
+        } */
+
+        #wrap {
+            width:1200px;
+            height:800px;
+            background-color:silver;
+            margin:0 auto;
+            font-size:50px;
+            text-align:center;
+        }
+
+        #header {
+            width:1200px;
+            height:100px;
+            background-color:cornflowerblue;
+            line-height:100px;
+        }
+
+        /* header end */
+
+        #section_1 {
+            width:1200px;
+            height:250px;
+            background-color:crimson;
+            margin:50px 0;
+            line-height:250px;
+        }
+
+        /* section_1 end */
+
+        #section_2 {
+            width:100%;
+            height:350px;
+            background-color:darkgoldenrod;
+            line-height:350px;
+        }
+
+        .con {
+            width:380px;
+            height:100%;
+            background-color:darksalmon;
+            float:left;
+            margin-right:30px;
+        }
+
+        .con:last-child {
+            margin-right:0;
+        }
+
+        /* section_2 end */
+
+    </style>
+</head>
+
+<body>
+
+    <!-- <div id="wrap">
+        <div id="menu">메뉴 영역</div>
+        <div id="section_1" class="section">첫 번째 섹션</div>
+        <ul id="section_2" class="section">
+            <li>컨텐츠1</li>
+            <li>컨텐츠2</li>
+            <li>컨텐츠3</li>
+        </ul>
+    </div> -->
+
+    <div id="wrap">
+
+        <div id="header">메뉴 영역</div>
+        <!-- header end -->
+
+        <div id="section_1">첫 번째 섹션</div>
+        <!-- section_1 and -->
+
+        <div id="section_2">
+            <div class="con">컨텐츠1</div>
+            <div class="con">컨텐츠2</div>
+            <div class="con">컨텐츠3</div>    
+        </div>
+        <!-- section_2 and -->
+
+    </div>
+</body>
+</html>

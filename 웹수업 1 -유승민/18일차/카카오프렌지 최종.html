@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오프렌즈</title>
+    <style>
+        * { margin:0; padding:0; }
+        a { text-decoration:none; color:black; }
+        ul { list-style:none; }
+        img { display:block; border:0; }
+
+        #wrap {
+            width:100%;
+        }
+
+        header {
+            width:100%;
+            height:80px;
+            background-color:rgba(0,0,0,0.5);
+
+            position:fixed;
+            top:0;
+            left:0;
+        }
+
+        header a {
+            color:white;
+            line-height:80px;
+            text-align:center;
+        }
+
+        #in_header {
+            width:1400px;
+            height:100%;
+            margin:0 auto;
+        }
+
+        #logo {
+            width:auto;
+            height:100%;
+            float:left;
+            font-size:20px;
+        }
+
+        .bold {
+            font-weight:900;
+        }
+
+        #menu_wrap {
+            width:auto;
+            height:100%;
+
+            position:absolute;
+            top:0;
+            left:50%;
+            margin-left:-342.5px;
+        }
+
+        #menu_wrap>li {
+            width:auto;
+            height:100%;
+            margin-right:80px;
+
+            float:left;
+
+            font-size:15px;
+        }
+
+        #menu_wrap>li:last-child {
+            margin-right:0;
+        }
+
+        #side_menu {
+            width:auto;
+            height:100%;
+
+            float:right;
+
+            font-size:15px;
+        }
+
+        header:hover {
+            background-color:white;
+            border-bottom:1px solid #ccc;
+        }
+
+        header:hover a {
+            color:black;
+        }
+
+        /* header end */
+
+        section {
+            width:100%;
+
+            float:left;
+        }
+
+        #section_1 {
+            height:800px;
+            background:url('./img/img_company01.jpg');
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-position:center;
+        }
+
+        /* section_1 end */
+
+        #section_2 {
+            padding:50px 0;
+        }
+
+        #container {
+            width:1400px;
+            margin:0 auto;
+        }
+
+        #top_wrap, #bottom_wrap {
+            width:100%;
+            margin-bottom:60px;
+            overflow:hidden;
+        }
+
+        #top_wrap>li, #bottom_wrap>li {
+            width:446.666px;
+            float:left;
+            margin-right:30px;
+        }
+
+        #top_wrap>li:last-child, #bottom_wrap>li:last-child {
+            margin-right:0;
+        }
+
+        #text_box {
+            width:100%;
+        }
+
+        #text_box>li {
+            width:auto;
+        }
+
+        #text_box>li:first-child {
+            float:left;
+        }
+
+        #text_box>li:last-child {
+            float:right;
+        }
+        
+        #text_box h3 {
+            font-size:26px;
+            letter-spacing:-1px;
+            /* 글자 자간 줄이기 */
+        }
+
+        #top_wrap h5 {
+            width:100%;
+            color:#666;
+        }
+
+        #top_wrap h3, #bottom_wrap h3 {
+            width:100%;
+            margin:15px 0;
+
+            color:#333;
+            line-height:30px;
+        }
+
+        #top_wrap p, #bottom_wrap p {
+            width:100%;
+
+            font-size:15px;
+            color:#666;
+            line-height:22px;
+        }
+
+        #img_box {
+            width:100%;
+        }
+
+        #img_box>img {
+            width:100%;
+        }
+
+        footer {
+            width:100%;
+            height:80px;
+            border-top:1px solid #e6e6e6;
+
+            float:left;
+        }
+
+        #footer_logo {
+            width:150px;
+            height:100%;
+            margin:0 auto;
+
+            line-height:80px;
+            text-align:center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <header>
+            <div id="in_header">
+                
+                <div id="logo">
+                    <a href="#">
+                        kakao<span class="bold">enterprise</span>
+                    </a>
+                </div>
+
+                <ul id="menu_wrap">
+                    <li><a href="#">소개</a></li>
+                    <li><a href="#">새소식</a></li>
+                    <li><a href="#">서비스</a></li>
+                    <li><a href="#">기술</a></li>
+                    <li><a href="#">기술블로그</a></li>
+                    <li><a href="#">제휴문의</a></li>
+                </ul>
+
+                <div id="side_menu">
+                    <a href="#">인재영입</a>
+                </div>
+
+            </div>
+            <!-- in_header end -->
+        </header>
+
+        <section id="section_1"></section>
+        <!-- section_1 end -->
+
+        <section id="section_2">
+
+            <div id="container">
+
+                <ul id="top_wrap">
+
+                    <li>
+                        <h5>NEWS</h5>
+                        <h3>카카오엔터프라이즈, 고객 맞춤형 AI 음성인식 서비<br>
+                        스 '커스텀 STT' 공개</h3>
+                        <p>- 고객의 상황에 따라 직접 쉽고 빠르게 실시간 적용/개발 가능 장<br>
+                        점 - 기존 STT 대비 문장 인식율 대폭 향상 - '카카오 i 커넥트 센터'<br>
+                        (AICC) ...</p>
+                    </li>
+
+                    <li>
+                        <h5>COMPANY</h5>
+
+                        <ul id="text_box">
+                            <li>
+                                <h3>WHY NOT?</h3>
+                                <h5>당연한 것들에 대한 도전</h5>
+                            </li>
+
+                            <li>
+                                <h3>If Kakao Enterprise, (&nbsp;&nbsp;&nbsp;&nbsp;)</h3>
+                                <h5>카카오스러운 생각에 대한 기대</h5>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h5>PARTNERSHIP1</h5>
+                        <h5>NEWS</h5>
+                        <h3>카카오엔터프라이즈는 AI 기술과 플랫폼을 바탕으로<br/>
+                        당신과 함께 더 나은 세상을 만들어갑니다.</h3>
+                    </li>
+
+                </ul>
+                <!-- top_wrap end -->
+
+                <ul id="bottom_wrap">
+
+                    <li>
+                        <div id="img_box">
+                            <img src="img/con1.jpg" alt="img">
+                        </div>
+
+                        <div id="title_wrap">
+                            <h3>기술블로그 Tech &</h3>
+
+                            <p>다양한 연구활동과 기술 소식, AI 회사에서 일하는 크루들과의 만<br/>
+                            남, 그리고 우리가 꿈꾸는 미래에 대한 이야기를 담았습니다.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div id="img_box">
+                            <img src="img/con2.jpg" alt="img">
+                        </div>
+
+                        <div id="title_wrap">
+                            <h3>카카오엔터프라이즈의 핵심기술, Kakao i</h3>
+
+                            <p>AI 플랫폼 Kakao i는 카카오엔터프라이즈가 보유한 핵심기술이자 <br/>
+                            미래 기술의 집약체입니다.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div id="img_box">
+                            <img src="img/con3.jpg" alt="img">
+                        </div>
+
+                        <div id="title_wrap">
+                            <h3>새로운 길에 도전할 크루를 기다립니다.</h3>
+
+                            <p>AI 기술을 통해 꿈을 현실로 만드는 여정에 함께 해주세요. 아무도 <br/>
+                            가보지 않은 길을 가는 카카오엔터프라이즈 호가 당신의 탑승을 <br/>
+                            기다립니다.</p>
+                        </div>
+                    </li>
+
+                </ul>
+                <!-- bottom_wrap end -->
+
+            </div>
+
+        </section>
+        <!-- section_2 end -->
+
+        <footer>
+            <div id="footer_logo">Kakao<span>enterprise</span></div>
+        </footer>
+
+    </div>
+    <!-- wrap end -->
+
+</body>
+</html>

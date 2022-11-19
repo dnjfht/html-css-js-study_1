@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션 마지막 예제</title>
+    <style>
+
+        * { margin:0; padding:0; }
+
+        ul { list-style:none; }
+
+        a { color:black; text-decoration:none; }
+
+        /* #wrap {
+            width:1200px;
+            height:2000px;
+            background-color:aqua;
+            margin:0 auto;
+
+            position:relative;
+
+            font-size:16px;
+            text-align:center;
+        }
+
+        #header {
+            width:1200px;
+            height:100px;
+            background-color:chartreuse;
+            line-height:100px;
+        }
+
+        .logo {
+            float:left;
+
+            width:200px;
+            height:100px;
+            background-color:crimson;
+        }
+
+        .menu {
+            float:right;
+
+            width:800px;
+            height:100px;
+            background-color:pink;
+
+        }
+
+        .section {
+            width:1200px;
+            height:300px;
+        }
+
+        #section_1 {
+            background-color:yellow;
+            margin-top:50px;
+        }
+
+        #section_2 {
+            background-color:yellowgreen;
+            margin-top:100px;
+        }
+
+        #section_3 {
+            position:absolute;
+            top:400px;
+            left:50%;
+            margin-left:-400px;
+
+            width:800px;
+            height:200px;
+            background-color:tomato;
+
+
+            line-height:200px;
+        }
+
+        .con {
+            width:260px;
+            height:200px;
+            margin-right:10px;
+
+            float:left;
+        }
+
+
+        #con_1 {
+            background-color:turquoise;
+            line-height:100px;
+        }
+
+        .number {
+            float:left;
+            width:130px;
+            height:100px;
+        }
+
+        #number1, #number4 {
+            background-color:white;
+        }
+
+        #number2, #number3 {
+            background-color:violet;
+        }
+
+
+        #con_2 {
+            background-color:pink;
+        }
+
+        #con_3 {
+            background-color:pink;
+            margin-right:0;
+        }
+
+        #con_3:hover {
+            background-color:gold;
+        }
+
+        #top {
+            position:fixed;
+            bottom:100px;
+            right:100px;
+
+            width:100px;
+            height:100px;
+            background-color:palevioletred;
+
+            font-size:20px;
+            font-weight:700;
+            text-align:center;
+            line-height:100px;
+        } */
+
+        #wrap {
+            width:1200px;
+            height:2000px;
+            background-color:silver;
+            margin:0 auto;
+
+            position:relative;
+
+            font-size:16px;
+            text-align:center;
+        }
+
+        #header {
+            width:100%;
+            height:100px;
+            background-color:palevioletred;
+            line-height:100px;
+            float:left;
+        }
+
+        #logo {
+            width:200px;
+            height:100%;
+            background-color:yellow;
+
+            float:left;
+        }
+
+        #menu {
+            width:800px;
+            height:100%;
+            background-color:mediumaquamarine;
+
+            float:right;
+        }
+
+        #section_1, #section_2 {
+            width:100%;
+            height:300px;
+            background-color:blueviolet;
+            margin:50px 0;
+            float:left; /* 레이아웃이 무너지지 않도록 큰 단락들에 float을 먹여줌 : 약속 */
+            position:relative;
+        }
+
+        #container {
+            width:800px;
+            height:200px;
+            background-color:brown;
+            position:absolute;
+            top:250px;
+            left:50%;
+            margin-left:-400px;
+            z-index:1;
+        }
+
+        .con {
+            width:260px;
+            height:100%;
+            background-color:chartreuse;
+            float:left;
+            margin-right:10px;
+            line-height:200px;
+        }
+
+        .con:last-child {
+            margin-right:0;
+        }
+
+        .con:last-child:hover {
+            background-color:salmon;
+        }
+
+        .box {
+            width:130px;
+            height:100px;
+            background-color:coral;
+            line-height:100px;
+            float:left;
+        }
+
+        .box:nth-child(1), .box:nth-child(4) {
+            background-color:cyan;
+        }
+
+        #top_btn {
+            width:100px;
+            height:100px;
+            background-color:springgreen;
+            position:fixed;
+            bottom:100px;
+            right:100px;
+            line-height:100px;
+        }
+
+        #top_btn>a {
+            display:block;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- <div id="wrap">
+        <div id="header">
+            <div class="logo">logo</div>
+            <div class="menu">메뉴</div>
+        </div>
+
+        <div class="section" id="section_1"></div>
+        <div class="section" id="section_2"></div>
+        <div class="section" id="section_3">
+            <div class="con" id="con_1">
+                <div class="number" id="number1">1</div>
+                <div class="number" id="number2">2</div>
+                <div class="number" id="number3">3</div>
+                <div class="number" id="number4">4</div>
+            </div>
+            <div class="con" id="con_2">컨텐츠2</div>
+            <div class="con" id="con_3">컨텐츠3</div>
+        </div>
+
+    </div>
+
+    <a href="#"><div id="top">top</div></a> -->
+
+
+    <div id="wrap">
+
+        <div id="header">
+            <div id="logo"><a href="#">logo</a></div>
+            <div id="menu">메뉴영역</div>
+        </div>
+        <!-- header end -->
+
+        <div id="section_1">
+            <div id="container">
+                <div class="con">
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                    <div class="box">3</div>
+                    <div class="box">4</div>
+                </div>
+
+                <div class="con">컨텐츠2</div>
+                <div class="con">컨텐츠3</div>
+            </div>
+        </div>
+        <!-- section_1 end -->
+
+        <div id="section_2"></div>
+        <!-- section_2 end -->
+
+        <div id="top_btn">
+            <a href="#">top</a>
+        </div>
+        <!-- top_btn end -->
+
+    </div>
+    <!-- wrap end -->
+
+</body>
+</html>

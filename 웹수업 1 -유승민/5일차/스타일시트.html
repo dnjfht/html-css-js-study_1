@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 스타일시트</title>
+    <style>
+        
+        /* *CSS(style)
+        => 몸으로 비유하자면
+        html이 뼈대, CSS는 옷을 입혀준다고 보면 됨
+
+        1. 스타일 적용하는 방법
+        => 선택을 하고 명령을 내린다
+        선택자 { 속성:속성값; } 
+        
+        2. 선택자
+        => 태그 선택자
+        - 내 문서 내에 있는 동일 태그를 선택할 때 */
+
+        h1 {
+            color:blue;
+        }
+        
+        /* => 클래스 선택자
+        - 태그의 속성으로 지정하기
+        - 동일한 선택자 반복 사용 가능
+        - 태그 안에 여러 개 설정 가능, 앞에는 .이 붙음 */
+
+        /* 클래스, 아이디 선택자 명 삽입시 규칙
+        1. 첫 번째 글자는 무조건 영어
+        2. 빈 공백 인식 안함
+        3. 특수문자 (_),(-)만 사용 가능
+        4. 두 단어 연결시 _ ,- 사용 또는 두 번째 단어의 첫 번째 글자를 대문자로 삽입 */
+
+        .color_red {
+            color:red;
+        }
+
+        /* =>. 아이디 선택자
+        - 태그의 속성으로 지정하기
+        - 우선순위가 가장 높음
+        - 동일한 선택자 반복 사용 불가
+        - 바디 안에서 단 하나만 설정 가능, 앞에는 #이 붙음 */ 
+  
+        #green {
+            color:green;
+        }
+
+        div {
+            width:300px;
+            height:300px;
+            background-color:yellow;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>태그 선택자</h1>
+    <h1>태그 선택자2</h1>
+    <h2>태그 선택자3</h2>
+    <h1 class="color_red">클래스 선택자</h1>
+    <h1 class="color_red">클래스 선택자2</h1>
+    <h1 class="color_red" id="green">아이디 선택자</h1>
+
+    <div></div>
+
+</body>
+</html>
